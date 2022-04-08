@@ -20,6 +20,10 @@
   "rules": {
     "camelcase": "off",
     "import/no-unresolved": "error",
+    "indent": [
+      "error",
+      2
+    ],
     "@typescript-eslint/naming-convention": [
       "error",
       {
