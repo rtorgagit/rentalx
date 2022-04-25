@@ -5,11 +5,10 @@ import swaggerUI from 'swagger-ui-express';
 
 import { AppError } from '@errors/AppError';
 
-import { router } from './routes';
-import swaggerConfig from './swagger.json';
-
-import './database';
+import swaggerConfig from '../../swagger.json';
+import '@shared/infra/typeorm';
 import '@shared/container';
+import { router } from './http/routes';
 
 const app = express();
 app.use(express.json());
