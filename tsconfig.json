@@ -19,7 +19,7 @@
         "shared/errors/*"
       ],
       "@utils/*": [
-        "utils/*"
+        "shared/utils/*"
       ]
     },
     "resolveJsonModule": true,
