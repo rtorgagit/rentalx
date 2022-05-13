@@ -23,7 +23,7 @@ describe('Create Car', () => {
       category_id: 'category',
     });
 
-    expect(car.id).toHaveProperty('id');
+    expect(car).toHaveProperty('id');
   });
 
   it('should not be able to create two cars with the same license plate', () => {
