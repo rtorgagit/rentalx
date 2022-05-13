@@ -5,6 +5,6 @@ import { CreateCarController } from '@modules/cars/useCases/createCar/CreateCarC
 const carsRoutes = Router();
 
 const createCarsController = new CreateCarController();
-carsRoutes.post('/cars', createCarsController.handle);
+carsRoutes.post('/', createCarsController.handle);
 
 export { carsRoutes };
