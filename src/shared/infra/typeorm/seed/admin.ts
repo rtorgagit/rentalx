@@ -13,6 +13,8 @@ async function create() {
     `INSERT INTO USERS(id, name, email, password, "isAdmin", created_at, driver_license) 
     VALUES('${id}', 'admin', 'admin@rentx.com', '${password}', true, 'now()', '123456')`,
   );
+
+  await connection.close();
 }
 
 create().then(() => { console.log('User admin created!'); });
